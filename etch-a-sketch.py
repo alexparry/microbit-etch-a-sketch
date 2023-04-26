@@ -78,7 +78,7 @@ input.on_gesture(Gesture.SHAKE, on_gesture_shake)
 def on_forever():
     # Make the current LED blink using the state brightness level
     while True:
-        led.plot_brightness(yPos, xPos, 125)
+        led.plot_brightness(xPos, yPos, 125)
         basic.pause(500)
         led.plot_brightness(xPos, yPos, state)
         basic.pause(500)
