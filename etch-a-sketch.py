@@ -31,14 +31,14 @@ def set_led_from_state():
     else:
         led.plot(xPos, yPos)
 
-def on_pin_pressed_p0():
+def on_logo_pressed():
     global state
     # Change the brightness of the current LED on (255) or off (0)
     if state == 0:
         state = 255
     else:
         state = 0
-input.on_pin_pressed(TouchPin.P0, on_pin_pressed_p0)
+input.on_logo_event(TouchButtonEvent.PRESSED, on_logo_pressed)
 
 def on_button_pressed_a():
     global xPos
