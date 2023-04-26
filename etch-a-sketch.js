@@ -35,8 +35,8 @@ function set_led_from_state() {
     }
 }
 
-input.onPinPressed(TouchPin.P0, function on_pin_pressed_p0() {
-    //  Change the brightness of the current LED on (255) or off (0)
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    //  Toggle the brightness of the current LED on (255) or off (0)
     if (state == 0) {
         state = 255
     } else {
