@@ -81,7 +81,7 @@ input.onGesture(Gesture.Shake, function on_gesture_shake() {
 basic.forever(function on_forever() {
     //  Make the current LED blink using the state brightness level
     while (true) {
-        led.plotBrightness(yPos, xPos, 125)
+        led.plotBrightness(xPos, yPos, 125)
         basic.pause(500)
         led.plotBrightness(xPos, yPos, state)
         basic.pause(500)
